@@ -1076,7 +1076,7 @@ p {
     border: none;
     margin: 0;
     line-height: 40px; }
-    .archive-list a h3 span.publish_on {
+    .archive-list a h3 span.published_on {
       float: right;
       font-size: 16px;
       text-align: right;

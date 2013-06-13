@@ -1,0 +1,10 @@
+{
+    "name": "Juniper",
+    "creator": "Plain",
+    "creator_url": "http://plainmade.com"
+    "post_types": [
+    	{
+    		"image": "Image"
+    	}
+    ]
+}

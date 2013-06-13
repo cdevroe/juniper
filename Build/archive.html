@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+    <title>Juniper: A Personal Template</title>
+
+    <link rel='stylesheet' href='stylesheets/normalize.css'>
+    <link rel='stylesheet' href='stylesheets/juniper_styles.css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic' rel='stylesheet' type='text/css'>
+
+	<script src='javascripts/custom.modernizr.js'></script>
+</head>
+<body>
+
+	<!-- Background Image -->
+	<div id="background">
+		<img src="images/background.jpg" id="bg-image" data-barley="bg_image" data-barley-editor="image">
+	</div>
+
+	<!-- Header -->
+	<header>
+		<div class="row">
+			<!-- Mobile Menu Icon -->
+			<div class="large-12 columns" id="mobile-header">
+				<a href="#menu" class="menu-trigger"><img src="images/mobile_menu.svg"></a>
+			</div>	
+			<!-- Navigation -->
+			<nav class="large-12 columns hide-for-small">
+				<ul id="menu">
+					<li><a href="/index">About</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>	
+			</nav>		
+			<!-- Logo & Icons -->
+			<div class="large-12 columns">
+				<div id="logo">
+					<div id="logo-image">
+						<img src="images/logo.svg" data-barley="logo" data-barley-editor="image">
+					</div>	
+				</div>	
+				<h1 class="site-title" data-barley="site_title" data-barley-editor="simple">Juniper: A Personal Template</h1>
+				
+				<div class="social-icons hide-for-small">
+					<div id="social">
+						<a href="#"><img src="images/social_icons/twitter.svg" data-barley="social1" data-barley-editor="image"></a>
+						<a href="#"><img src="images/social_icons/facebook.svg" data-barley="social2" data-barley-editor="image"></a>
+						<a href="#"><img src="images/social_icons/dribbble.svg" data-barley="social3" data-barley-editor="image"></a>
+						<a href="#"><img src="images/social_icons/instagram.svg" data-barley="social4" data-barley-editor="image"></a>
+					</div>
+				</div>	
+			</div>
+		</div>	
+		<div id="placeholder"></div>	
+	</header>	
+			
+			<div class="row">
+				<div class="large-9 large-centered columns cf">
+					<div class="archive-list">
+						<h2 data-barley="archive_title" data-barley-editor="simple">Blog Archives</h2>
+						<!-- repeat:blogpost:24 -->
+						<a href="%URL%"><h3>%TITLE%<span class="published_on">%PUBLISHED_ON%</span></h3></a>
+						<!-- endrepeat -->
+					</div>
+				</div>
+			</div>
+
+			<div class="pagination">
+				<div class="row">
+					<div class="large-9 large-centered columns cf">
+						<div class="large-4 columns">	
+							<!-- previous --><a href="#" class="newer inactive"><img src="images/right_arrow.svg"> Newer Posts</a><!-- endprevious -->
+						</div>	
+						<div class="large-4 columns archives">
+							<a href="/blog">Latest Post</a>
+						</div>	
+						<div class="large-4 columns">
+							<!-- next --><a href="#" class="older">Older Posts <img src="images/right_arrow.svg"></a><!-- endnext -->
+						</div>
+					</div>
+				</div>
+			</div>	
+		
+			
+			<!-- Footer -->
+			<footer class="cf">
+				<a class="scrollup"><img src="images/up_arrow.svg"></a>
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="large-6 columns">
+							<span class="copyright" data-barley="copyright" data-barley-editor="mini">© Juniper. All rights reserved.</span>
+						</div>
+						<div class="large-6 columns">
+							<span class="barley-logo" data-barley="powered" data-barley-editor="mini">powered by <a href="#"><img src="images/barley_icon.svg" width="30"></a></span>
+						</div>
+					</div>
+				</div>
+			</footer>
+	
+	<!-- Javascripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="javascripts/jquery.fitvids.js"></script>
+	<script src="javascripts/jquery.jpanelmenu.min.js"></script>
+	<script>
+	  (function() {
+		var img = document.getElementById('logo-image').firstChild;
+		img.onload = function() {
+		    if(img.height > img.width) {
+		        img.height = 'auto';
+		        img.width = '50%';
+		    }
+		};
+	  }());
+	  
+	  $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+   	  });
+
+	  var jPM = $.jPanelMenu({
+		    menu: '#menu',
+		    trigger: '.menu-trigger',
+		    duration: 300
+		});
+	  jPM.on();
+
+	  $(document).ready(function(){
+	    $(".video").fitVids();
+	  });
+
+	  var $clonesocial = $('#social').clone();
+	  $("#jPanelMenu-menu").append($clonesocial);
+
+	  var $clonebackground = $('#bg-image').clone();
+	  $("#placeholder").append($clonebackground);
+
+	</script>
+
+</body>
+</html>

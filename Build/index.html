@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+    <title>Juniper: A Personal Template</title>
+
+    <link rel='stylesheet' href='stylesheets/normalize.css'>
+    <link rel='stylesheet' href='stylesheets/juniper_styles.css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic' rel='stylesheet' type='text/css'>
+
+	<script src='javascripts/custom.modernizr.js'></script>
+</head>
+<body>
+
+	<!-- Background Image -->
+	<div id="background">
+		<img src="images/background.jpg" id="bg-image" data-barley="bg_image" data-barley-editor="image">
+	</div>
+
+	<!-- Header -->
+	<header>
+		<div class="row">
+			<!-- Mobile Menu Icon -->
+			<div class="large-12 columns" id="mobile-header">
+				<a href="#menu" class="menu-trigger"><img src="images/mobile_menu.svg"></a>
+			</div>	
+			<!-- Navigation -->
+			<nav class="large-12 columns hide-for-small">
+				<ul id="menu">
+					<li><a href="/index">About</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>	
+			</nav>		
+			<!-- Logo & Icons -->
+			<div class="large-12 columns">
+				<div id="logo">
+					<div id="logo-image">
+						<img src="images/logo.svg" data-barley="logo" data-barley-editor="image">
+					</div>	
+				</div>	
+				<h1 class="site-title" data-barley="site_title" data-barley-editor="simple">Juniper: A Personal Template</h1>
+				
+				<div class="social-icons hide-for-small">
+					<div id="social">
+						<a href="#"><img src="images/social_icons/twitter.svg" data-barley="social1" data-barley-editor="image"></a>
+						<a href="#"><img src="images/social_icons/facebook.svg" data-barley="social2" data-barley-editor="image"></a>
+						<a href="#"><img src="images/social_icons/dribbble.svg" data-barley="social3" data-barley-editor="image"></a>
+						<a href="#"><img src="images/social_icons/instagram.svg" data-barley="social4" data-barley-editor="image"></a>
+					</div>
+				</div>	
+			</div>
+		</div>	
+		<div id="placeholder"></div>	
+	</header>	
+
+			<!-- Intro -->
+			<section class="cf">
+				<div class="row">
+					<div class="large-12 columns cf">
+						<div class="intro" data-barley="intro" data-barley-editor="simple">
+							<p>Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis.</p>
+						</div>
+					</div>
+				</div>
+			</section>		
+
+			<!-- Image Gallery -->
+			<section class="cf">
+				<div class="row">
+					<div class="large-12 columns cf">
+						<!--<h2>My Work</h2>-->
+						<!-- repeat:image:16 -->
+						<div class="large-3 small-6 columns gallery-piece">
+							%CONTENT%
+							<a class="zoom-link" href="%URL%"><img src="images/zoom.svg"></a>
+						</div>
+						<!-- endrepeat -->
+					</div>	
+				</div>			
+			</section>
+
+			<!-- Info Blocks - 3-Up -->
+			<section class="cf">
+				<div class="row">
+					<div class="large-12 columns cf three-up">
+						<!--<h2>Services</h2>-->
+						<!-- repeat:info_block:3 -->
+						<div class="large-4 columns info-block">
+							<img src="images/cogs.svg" width="100" data-barley="info_image" data-barley-editor="image-special">
+							<h3 data-barley="info_headline" data-barley-editor="simple">Service Name</h3>
+							<div data-barley="info_content" data-barley-editor="advanced">
+								<p>Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus.</p>
+							</div>	
+						</div>
+						<!-- endrepeat -->
+					</div>	
+				</div>	
+			</section>
+
+			<!-- Info Blocks - 2-Up -->
+			<section class="cf">
+				<div class="row">
+					<div class="large-12 columns cf two-up">
+						<!--<h2>Testimonials</h2>-->
+						<!-- repeat:large_info_blocks:2 -->
+						<div class="large-6 columns info-block">
+							<div data-barley="large_info_content" data-barley-editor="advanced">
+								<h3>John Doe <a href="#">johndoe.org</a></h3>
+								<p>Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+							</div>	
+						</div>
+						<!-- endrepeat -->
+					</div>
+				</div>
+			</section>
+
+			<!-- Blog Posts -->
+			<section class="cf">
+				<div class="row">
+					<div class="large-12 columns cf three-up ">
+						<!--<h2>Latest Blog Posts</h2>-->
+						<!-- repeat:blogpost:3 -->
+						<div class="large-4 columns blog-post">
+							<h3><a href="%URL%">%TITLE%</a></h3>
+							<span class="blog-date">%PUBLISHED_ON%<</span>
+							<div data-barley="blog_excerpt" data-barley-editor="advanced">
+								%EXCERPT%
+							</div>	
+							<a class="read-more" href="%URL%">Read More</a>
+						</div>
+						<!-- endrepeat -->
+					</div>
+				</div>
+			</section>
+
+			
+			<!-- Footer -->
+			<footer class="cf">
+				<a class="scrollup"><img src="images/up_arrow.svg"></a>
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="large-6 columns">
+							<span class="copyright" data-barley="copyright" data-barley-editor="mini">© Juniper. All rights reserved.</span>
+						</div>
+						<div class="large-6 columns">
+							<span class="barley-logo" data-barley="powered" data-barley-editor="mini">powered by <a href="#"><img src="images/barley_icon.svg" width="30"></a></span>
+						</div>
+					</div>
+				</div>
+			</footer>
+	
+	<!-- Javascripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="javascripts/jquery.fitvids.js"></script>
+	<script src="javascripts/jquery.jpanelmenu.min.js"></script>
+	<script>
+	  (function() {
+		var img = document.getElementById('logo-image').firstChild;
+		img.onload = function() {
+		    if(img.height > img.width) {
+		        img.height = 'auto';
+		        img.width = '50%';
+		    }
+		};
+	  }());
+	  
+	  $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+   	  });
+
+	  var jPM = $.jPanelMenu({
+		    menu: '#menu',
+		    trigger: '.menu-trigger',
+		    duration: 300
+		});
+	  jPM.on();
+
+	  $(document).ready(function(){
+	    $(".video").fitVids();
+	  });
+
+	  var $clonesocial = $('#social').clone();
+	  $("#jPanelMenu-menu").append($clonesocial);
+
+	  var $clonebackground = $('#bg-image').clone();
+	  $("#placeholder").append($clonebackground);
+
+	</script>
+
+</body>
+</html>

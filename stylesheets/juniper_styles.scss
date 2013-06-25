@@ -4,7 +4,7 @@
 $title: 'Lato';
 $copy: 'Lato';
 $primary: #222;
-$secondary: #f1f1f1;
+$secondary: #f0f0f0;
 $link: #4d8abd;
 
 // Mixins
@@ -71,6 +71,7 @@ h2 {
 }
 h3 {
 	font-size: 20px;
+	line-height: 25px;
 	font-weight: 300;
 	margin: 34px 0 22px;
 	letter-spacing: normal;
@@ -197,16 +198,20 @@ nav {
 article {
 	margin: 68px 16px 40px;
 	font-size: 17px;
-	line-height: 28px;
+	line-height: 31px;
 	word-spacing: 1px;
 	h2 {
 	    font-size: 32px;
-		margin: 34px 0 20px;
+		margin: 34px 0 32px;
 		padding-bottom: 26px;
 		line-height: 40px;
 		border-bottom: 1px solid $secondary;
 		a {
 			color: $primary;
+		}
+		&.four-o-four {
+			font-size: 50px;
+			padding-bottom: 42px;
 		}
 	}
 	h3 {
@@ -243,7 +248,7 @@ article {
 	}
 	p {
 		font-size: 17px;
-		line-height: 28px;
+		line-height: 31px;
 		margin-bottom: 30px;
 		word-spacing: 1px;
 	}
@@ -469,6 +474,53 @@ section {
 		}
 	}
 }
+.focus-index-entry {
+	border-bottom: 1px solid $secondary;
+	padding: 12px 0 18px;
+	.focus-image {
+		margin-top: 38px;
+	}
+	&:first-child {
+		margin-top: 30px;
+	}
+	&:last-child {
+		border: none;
+		margin-bottom: 46px;
+	}
+}
+.view-more-link {
+	display: block;
+	margin: 18px 0 18px;
+	text-align: center;
+	font-size: 13px;
+	a {
+		padding: 6px 12px 8px 14px;
+		background: white;
+		box-shadow: 0 -1px 0 0 rgba(0,0,0,0.1) inset, 0 -24px 40px -30px rgba(0,0,0,0.2) inset, 0 1px 3px 0 rgba(0,0,0,0.15);
+		border-radius: 1000px;
+		color: $primary;
+	}
+	i {
+		margin-left: 4px;
+		font-size: 12px; 
+	}
+	&.focus-index {
+		display: none;
+	}
+	&.blurb-index {
+		display: none;
+	}
+	&.blog-index {
+		display: none;
+	}
+}
+.page-title {
+    font-size: 32px;
+	margin: 62px 0 20px;
+	padding-bottom: 26px;
+	line-height: 40px;
+	border-bottom: 1px solid $secondary;
+}
 footer {
 	border-top: 1px solid $secondary;
 	padding: 0 0 26px;
@@ -594,18 +646,18 @@ footer {
 	margin: 20px 0 60px;
 	a {
 		color: $primary;
-		img {
-			-moz-transform: scaleX(-1);
-	        -o-transform: scaleX(-1);
-	        -webkit-transform: scaleX(-1);
-	        transform: scaleX(-1);
-	        filter: FlipH;
-	        -ms-filter: "FlipH";
-	        margin-left: -3px;
-	        margin-right: 6px;
-	        width: 7px;
-	        vertical-align: -1px;
+		font-size: 16px;
+		i {
+			margin: 0 4px;
 		}
+	}
+	.seperator {
+		border-right: 1px solid $secondary;
+		padding-right: 16px;
+		margin-right: 14px;
+	}
+	&.four-o-four {
+		margin-top: 60px;
 	}
 }
 

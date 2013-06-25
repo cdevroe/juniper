@@ -1,0 +1,30 @@
+<!-- @include _header -->
+			
+			<div class="row">
+				<div class="large-9 large-centered columns cf">
+					<h2 class="page-title" data-barley="blurb-page_title" data-barley-editor="simple">Page Title</h2>
+					<!-- repeat:blurb:16 -->
+					<div class="row focus-index-entry">
+						<div class="large-3 columns">
+							<div class="focus-image" data-barley="blurb_image" data-barley-editor="image-special">
+								<img src="<!-- @path cogs.svg -->">
+							</div>
+						</div>
+						<div class="large-9 columns info-block">
+							<h3 data-barley="blurb_headline" data-barley-editor="simple"><a href="%URL%">%HEADLINE%</a></h3>
+							<div data-barley="blurb_content" data-barley-editor="advanced">
+								%CONTENT%
+							</div>	
+						</div>
+					</div>	
+					<!-- endrepeat -->
+				</div>
+			</div>		
+
+			<div class="row">
+				<div class="large-9 large-centered columns cf back-link">
+					<a href="/index"><i class="barley-icon-angle-left"></i> Back</a>
+				</div>
+			</div>
+		
+<!-- @include _footer -->

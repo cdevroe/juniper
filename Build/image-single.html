@@ -30,7 +30,7 @@
 			<!-- Navigation -->
 			<nav class="large-12 columns hide-for-small">
 				<ul id="menu">
-					<li><a href="/index">About</a></li>
+					<li><a href="/index">Home</a></li>
 					<li><a href="/blog">Blog</a></li>
 				</ul>	
 			</nav>		
@@ -82,7 +82,7 @@
 
 			<div class="row">
 				<div class="large-9 large-centered columns cf back-link">
-					<a href="/index" class="older"><img src="images/right_arrow.svg"> Back</a>
+					<a href="/index"><i class="barley-icon-angle-left"></i> Back</a>
 				</div>
 			</div>
 		
@@ -131,6 +131,14 @@
 
 	  $(document).ready(function(){
 	    $(".video").fitVids();
+	    
+	    if($('.focus').length > 2){ $('.focus-index').show(); }
+	    if($('.focus').length < 1){ $('.focus-container').hide(); }
+	    if($('.blurb').length > 1){ $('.blurb-index').show(); }
+	    if($('.blurb').length < 1){ $('.blurb-container').hide(); }
+	    if($('.blog-post').length > 2){ $('.blog-index').show(); }
+	    if($('.blog-post').length < 1){ $('.blog-container').hide(); }
+
 	  });
 
 	  var $clonesocial = $('#social').clone();
@@ -138,6 +146,8 @@
 
 	  var $clonebackground = $('#bg-image').clone();
 	  $("#placeholder").append($clonebackground);
+
+	  
 
 	</script>
 

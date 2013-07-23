@@ -1143,7 +1143,7 @@ section {
     float: left; }
   section .image {
     margin: 0 20px -40px; }
-  section:last-child {
+  section.last {
     padding-bottom: 64px; }
 
 .intro p {

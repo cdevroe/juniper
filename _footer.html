@@ -52,6 +52,8 @@
 	    if($('.blog-post').length < 1){ $('.blog-container').hide(); }
 	    if($('.gallery-piece').length < 1){ $('.image-gallery').hide(); }
 
+	    $("#home-content section:visible:odd").addClass("even");
+
 	  });
 
 	  var $clonesocial = $('#social').clone();

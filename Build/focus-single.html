@@ -16,8 +16,9 @@
 <body>
 
 	<!-- Background Image -->
-	<div id="background" id="bg-image" data-barley="bg_image" data-barley-editor="image">
+	<div id="background" id="bg-image" data-barley="bg_image" data-barley-editor="image-special">
 		<img src="images/background.jpg">
+		<div class="bg-fade"></div>
 	</div>
 
 	<!-- Header -->
@@ -137,6 +138,8 @@
 	    if($('.blog-post').length > 2){ $('.blog-index').show(); }
 	    if($('.blog-post').length < 1){ $('.blog-container').hide(); }
 	    if($('.gallery-piece').length < 1){ $('.image-gallery').hide(); }
+
+	    $("#home-content section:visible:odd").addClass("even");
 
 	  });
 

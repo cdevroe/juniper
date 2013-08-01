@@ -988,7 +988,7 @@ nav a {
       height: 50%; }
 
 article {
-  margin: 68px 16px 40px;
+  margin: 68px 16px 100px;
   font-size: 17px;
   line-height: 31px;
   word-spacing: 1px; }
@@ -1225,7 +1225,7 @@ section {
     margin: 10px 0 26px; }
     .two-up .info-block h3 a {
       margin-left: 6px;
-      font-size: 18px; }
+      font-size: 14px; }
   .two-up .info-block img {
     display: block;
     margin: 0 auto; }
@@ -1317,7 +1317,7 @@ footer {
   background: rgba(0, 0, 0, 0.02);
   border-top: 1px solid rgba(0, 0, 0, 0.02);
   height: 140px;
-  margin: 40px 0 -36px;
+  margin: 40px 0 0;
   padding: 54px 0 0; }
   .pagination a {
     text-decoration: none;
@@ -1477,8 +1477,9 @@ footer {
     .two-up .info-block h3 {
       font-size: 18px;
       margin-bottom: 16px; }
-      .two-up .info-block h3 a {
-        font-size: 16px; }
+      .two-up .info-block h3 span {
+        font-size: 13px;
+        margin-left: 10px; }
     .two-up .info-block p {
       font-size: 13px; }
     .two-up .info-block:last-child {
@@ -1532,7 +1533,7 @@ footer {
     text-align: center; }
 
   article {
-    margin: 38px 16px 40px;
+    margin: 38px 16px 100px;
     font-size: 14px;
     line-height: 22px; }
     article h2 {

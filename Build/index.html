@@ -9,7 +9,7 @@
 
     <link rel='stylesheet' href='stylesheets/normalize.css'>
     <link rel='stylesheet' href='stylesheets/juniper_styles.css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic' rel='stylesheet' type='text/css'>
 
 	<script src='javascripts/custom.modernizr.js'></script>
 </head>
@@ -213,6 +213,12 @@
 	    $("#home-content section:visible:odd").addClass("even");
 	    $("#home-content section:visible:last").addClass("last");
 
+	    if(!Modernizr.svg) {
+		    $('img[src*="svg"]').attr('src', function() {
+		        return $(this).attr('src').replace('.svg', '.png');
+		    });
+		}
+
 	  });
 
 	  var $clonesocial = $('#social').clone();
@@ -220,8 +226,6 @@
 
 	  var $clonebackground = $('#bg-image').clone();
 	  $("#placeholder").append($clonebackground);
-
-	  
 
 	</script>
 

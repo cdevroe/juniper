@@ -1059,6 +1059,23 @@ article {
       padding-left: 6px; }
   article .video {
     margin: 40px 0; }
+  article .glyph-link {
+    color: rgba(34, 34, 34, 0.7);
+    font-size: 18px;
+    vertical-align: center;
+    opacity: 0.8;
+    -moz-transition: opacity .7s ease-in-out;
+    -webkit-transition: opacity .7s ease-in-out;
+    -o-transition: opacity .7s ease-in-out;
+    transition: opacity .7s ease-in-out;
+    margin-left: 10px;
+    margin-right: -28px; }
+    article .glyph-link:hover {
+      opacity: 1;
+      -moz-transition: opacity .7s ease-in-out;
+      -webkit-transition: opacity .7s ease-in-out;
+      -o-transition: opacity .7s ease-in-out;
+      transition: opacity .7s ease-in-out; }
 
 p {
   font-size: 13px; }
@@ -1219,6 +1236,22 @@ section {
     display: block; }
   .three-up .blog-post a.read-more {
     font-size: 14px; }
+  .three-up .blog-post .glyph-link {
+    color: rgba(34, 34, 34, 0.7);
+    font-size: 14px;
+    vertical-align: center;
+    opacity: 0.25;
+    -moz-transition: opacity .7s ease-in-out;
+    -webkit-transition: opacity .7s ease-in-out;
+    -o-transition: opacity .7s ease-in-out;
+    transition: opacity .7s ease-in-out;
+    margin-left: 8px; }
+    .three-up .blog-post .glyph-link:hover {
+      opacity: 0.7;
+      -moz-transition: opacity .7s ease-in-out;
+      -webkit-transition: opacity .7s ease-in-out;
+      -o-transition: opacity .7s ease-in-out;
+      transition: opacity .7s ease-in-out; }
 
 .two-up .info-block {
   margin: -10px 0 0; }

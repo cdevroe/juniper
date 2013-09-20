@@ -299,6 +299,19 @@ article {
 	.video {
 		margin: 40px 0;
 	}
+	.glyph-link {
+		color: transparentize($primary, 0.3);
+		font-size: 18px;
+		vertical-align: center;
+		opacity: 0.8;
+		@include fade;
+		margin-left: 10px;
+		margin-right: -28px;
+		&:hover {
+			opacity: 1;
+			@include fade;
+		}
+	}
 }	
 p {
 	font-size: 13px;
@@ -471,6 +484,18 @@ section {
 		}
 		a.read-more {
 			font-size: 14px;
+		}
+		.glyph-link {
+			color: transparentize($primary, 0.3);
+			font-size: 14px;
+			vertical-align: center;
+			opacity: 0.25;
+			@include fade;
+			margin-left: 8px;
+			&:hover {
+				opacity: 0.7;
+				@include fade;
+			}
 		}
 	}
 }

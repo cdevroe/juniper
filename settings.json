@@ -5,7 +5,7 @@
     "content_types": {
             "image": "Image",
             "focus": "Focal Point",
-            "blurb": "Info Blurb" 
+            "blurb": "Info Blurb"
     },
     "feed": [
     	"blog",

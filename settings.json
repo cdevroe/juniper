@@ -6,6 +6,10 @@
             "image": "Image",
             "focus": "Focal Point",
             "blurb": "Info Blurb" 
-    }
-    
+    },
+    "feed": [
+    	"blog",
+    	"image",
+    	"blurb"
+    ]
 }

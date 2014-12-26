@@ -9,7 +9,6 @@
     },
     "feed": [
     	"blog",
-    	"image",
-    	"blurb"
+    	"image"
     ]
 }

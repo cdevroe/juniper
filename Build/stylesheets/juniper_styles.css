@@ -1664,4 +1664,7 @@ footer {
     margin-left: 0;
     font-size: 12px;
     padding: 9px 14px 10px;
-    border-radius: 0; } }
+    border-radius: 0; }
+
+  body.barley-bar-visible #jPanelMenu-menu {
+    top: 56px; } }

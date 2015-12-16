@@ -1,52 +1,37 @@
-Juniper
+Juniper for Barley
 ==================
+Made by [Plain](http://plainmade.com/) in Scranton, PA.
 
-Juniper - An open source, responsive personal or professional template for [Barley CMS](http://getbarley.com/cms) made by [Plain](http://plainmade.com/).
+A responsive professional theme built for [Barley](http://getbarley.com/) made by [Plain](http://plainmade.com/). It is also available for WordPress.
 
-Preview: [http://preview-juniper.getbarley.com/]()
+Preview: [http://preview-juniper.getbarley.com/](http://preview-juniper.getbarley.com/)
 
-![Screenshot of Juniper]
-(https://raw.githubusercontent.com/plainmade/juniper/master/images/screenshots/juniper-home.jpg)
+# Usage & Compiling
 
-# Installation
+Run the following commands to get started. For help, see [Grunt's Getting Started tutorial](http://gruntjs.com/getting-started).
 
-This source can be used in any content management system. It is just HTML, CSS, and JavaScript. However, here is how you use it with Barley CMS.
+```
+git clone git:github.com/plainmade/juniper.git
+npm install
+grunt
+```
 
-## Simple: Using on Barley CMS
+# License 
 
-- Navigate to [the preview site](http://preview-juniper.getbarley.com/)
-- Click “Use this Template” button (this will create a new Barley CMS site with the latest code)
-- Optional: When you sync to Dropbox with Barley CMS, it will push the files for this template into your Dropbox directory
-- Make edits to the local files.
-- Sync with Dropbox again and your changes will appear
+Juniper for Barley
+Copyright (C) 2015 Plain, LLC. http://plainmade.com
 
-Or, 
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-## Advanced: Using on Barley CMS
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-- Clone or Fork this repository
-- Make edits to the files locally
-- Create a new Barley CMS site using “Sapling”
-- Delete the Sapling files in your new sitename.getbarley.com folder
-- Copy Juniper’s /build/ files into that folder
-- Sync to Barley CMS
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
-Note: You’ll need to build the HTML with [Hammer for Mac](http://hammerformac.com/) (or you can use your own way). And the CSS is compiled using SASS.
-
-# Screenshots
-
-![Screenshot of Juniper]
-(https://raw.githubusercontent.com/plainmade/juniper/master/images/screenshots/juniper-home.jpg)
-
-![Screenshot of Juniper]
-(https://raw.githubusercontent.com/plainmade/juniper/master/images/screenshots/juniper-blog.jpg)
-
-![Screenshot of Juniper]
-(https://raw.githubusercontent.com/plainmade/juniper/master/images/screenshots/juniper-photo.jpg)
-
-
-
-# License
-
-Juniper is released under the MIT License which is provided in this source. If you’d like to use Juniper for your own projects that are not powered by Barley CMS all we ask is for attribution to [Plain](http://plainmade.com/).
+See license.txt
